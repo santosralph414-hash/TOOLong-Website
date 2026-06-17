@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TOOLong - Educational Material Rentals</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="TOOLong-logo.png" alt="TOOLong Logo">
+    <h1>TOOLong</h1>
+    <p>Educational Material Rentals</p>
+    <p><em>Tools for Better Learning.</em></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision & Mission</a>
+    <a href="#team">Team</a>
+    <a href="#catalog">Catalog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About TOOLong</h2>
+    <p>TOOLong is a rental marketplace platform that allows students and communities to rent school materials and equipment instead of purchasing them. It promotes accessibility, affordability, and sustainability.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Vision & Mission</h2>
+    <p><strong>Vision:</strong> To become a trusted and accessible community equipment rental platform.</p>
+    <p><strong>Mission:</strong> Connect tool owners and renters through a safe, convenient, and reliable digital platform.</p>
+  </section>
+
+  <section id="team">
+    <h2>Management Team</h2>
+    <div class="team">
+      <div class="member"><strong>CEO:</strong> Ralph Lauren Santos</div>
+      <div class="member"><strong>Operations Manager:</strong> Venice Glenn Umali</div>
+      <div class="member"><strong>Finance Manager:</strong> Gian Nicole San Diego</div>
+      <div class="member"><strong>Marketing Manager:</strong> Gian Andrei Sampayan</div>
+      <div class="member"><strong>IT Support:</strong> Joey Rosal</div>
+      <div class="member"><strong>Customer Support:</strong> Mark Jason Salvador & Lester Roculas</div>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <h2>Rental Catalog</h2>
+    <div class="catalog">
+      <div class="item">
+        <h3>Calculator</h3>
+        <p>Scientific calculators for exams and projects.</p>
+        <button onclick="showDetails('Calculator', '₱50/day', 'Perfect for math and science exams.')">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>Laptop</h3>
+        <p>Affordable laptops for school and work.</p>
+        <button onclick="showDetails('Laptop', '₱300/day', 'Ideal for assignments, research, and presentations.')">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>Camera</h3>
+        <p>High-quality cameras for projects and events.</p>
+        <button onclick="showDetails('Camera', '₱250/day', 'Great for documentation and creative projects.')">Rent Now</button>
+      </div>
+      <div class="item">
+        <h3>Printer</h3>
+        <p>Reliable printers for documents and assignments.</p>
+        <button onclick="showDetails('Printer', '₱100/day', 'Efficient for printing reports and schoolwork.')">Rent Now</button>
+      </div>
+    </div>
+    <div id="cart">
+      <h3>Your Rental Cart</h3>
+      <ul id="cartItems"></ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: toolongrentals@gmail.com</p>
+    <p>Address: Diliman, Quezon City, Philippines</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TOOLong | Educational Material Rentals</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="itemModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p id="modalDesc"></p>
+      <button onclick="confirmRent()">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
